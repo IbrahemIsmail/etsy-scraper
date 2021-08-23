@@ -1,0 +1,27 @@
+<%- include('./partials/header') %> 
+<%- include('./partials/nav') %> 
+
+<section id="products">
+    <div class="container">
+        <div class="title">
+            <h1>Products</h1>
+            <p>Products scraped from etsy.com</p>
+        </div>
+        <div class="row">
+        <% for(let i=0; i<products.length; i++){ %>
+            <div class="col-md-4 col-lg-4">
+                <div class="card text-center">
+                    <img src="<%= products[i].pImage %>" alt="image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= products[i].pName %></h5>
+                        <p class="card-text">£<%= products[i].price %></p>
+                        <a href="/products/id=<%= products[i].id %>" class="btn btn-primary">Find Out More</a>
+                    </div>
+                </div>
+            </div> 
+        <% } %>
+    </div>
+    </div>
+</section>
+
+<%- include('./partials/footer') %>     

@@ -1,0 +1,18 @@
+<%- include('./partials/header') %>
+<%- include('./partials/nav') %>  
+
+<section class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-lg-8">
+            <form action="/new" method="post" class="form-container">
+                <div class="form-group">
+                    <label for="link">Etsy Link</label>
+                    <input class="form-control" type="text" name="link" id="linkInput" placeholder="example: https://www.etsy.com/uk/listing/593579116/plant-enthusiast-bookmarks">
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<%- include('./partials/footer') %> 

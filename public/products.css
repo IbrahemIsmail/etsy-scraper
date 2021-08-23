@@ -1,0 +1,75 @@
+*{
+    /* height: 100%; */
+    /* width: 100%; */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: purple;
+}
+#products{
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+#products h1{
+    font-weight: 900;
+    font-size: 34px;
+    padding-bottom: 5px;
+}
+
+.title{
+    text-align: center;
+    padding: 25px 0;
+}
+
+.title p{
+    font-size: 18px;
+}
+
+.card-body{
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+    margin: 20px 10px;
+}
+
+.card-body a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: auto;
+    font-weight: 600;
+}
+
+.card-body a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* form style */
+
+.form-container{
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px 0 #000;
+   width: 100%; 
+}
+
+.container-fluid{
+    margin-top: 30px;
+}
+
+#linkInput{
+    margin: 20px 0;
+}
+
+/* product page styles */
+
+.mb-5{
+    margin-top: 20px;
+    
+}

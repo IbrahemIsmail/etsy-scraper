@@ -1,0 +1,33 @@
+<%- include('./partials/header') %> 
+<%- include('./partials/nav') %> 
+
+    <section class="mb-5" style="margin-top: 20px;">
+
+        <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+    
+            <div id="mdb-lightbox-ui"></div>
+    
+            <div class="mdb-lightbox">
+    
+            <div class="row product-gallery mx-1">
+                <div class="col-12 mb-0">
+                    <img src="<%= product.pImage %>" class="img-fluid z-depth-1">
+                </div>
+            </div>
+            </div>
+    
+        </div>
+        <div class="col-md-6">
+    
+            <h5><%= product.pName %></h5>
+            <p class="mb-2 text-muted text-uppercase small">Scraped Product</p>
+            <p><span class="mr-1"><strong>£<%= product.price %></strong></span></p>
+            <p class="pt-1">This product has been scraped using nodejs, ejs, cheerio, and mysql. you can scrape some more using the 'Scrape New Link' at the top right of the screen!</p>
+            <hr>
+        </div>
+        </div>
+    
+    </section>
+
+<%- include('./partials/footer') %>     
